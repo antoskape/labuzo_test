@@ -14,6 +14,7 @@ Update credentials.json with right user email and password.
 
 # Requirements
 
+Google Chrome browser
 Python 3.8
 Selenium library
 undetected_chromedriver package
