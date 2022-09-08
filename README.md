@@ -2,7 +2,7 @@
 
 Python code to login automatically into the Google mailbox.
 
-# Author
+## Author
 
 Peter Antoska  
 peter.antoska@gmail.com
@@ -12,7 +12,7 @@ peter.antoska@gmail.com
 Copy gmail_authorization_undetected.py file together with credentials.json into the same folder.
 Update credentials.json with right user email and password.
 
-# Requirements
+## Requirements
 
 Google Chrome browser  
 Python 3.8  
