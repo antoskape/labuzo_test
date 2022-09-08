@@ -31,18 +31,24 @@ if __name__ == "__main__":
     # Open Login panel
     driver.get("https://accounts.google.com/")
 
-    # Fill in the email address
-    driver.find_element(By.XPATH, '//*[@id="identifierId"]').send_keys(str(obj["user"]))
-    # Click on Next-button
-    driver.find_element(By.XPATH, '//*[@id="identifierNext"]/div/button/span').click()
-    sleep(3)
-    # Fill in the password
-    driver.find_element(
-        By.XPATH, '//*[@id="password"]/div[1]/div/div[1]/input'
-    ).send_keys(str(obj["passwd"]))
-    # Click on Next button
-    driver.find_element(By.XPATH, '//*[@id="passwordNext"]/div/button/span').click()
-    sleep(10)
-
-    # Login process was successful
-    print("You are logged into Google email account!")
+    try:
+        # Fill in the email address
+        driver.find_element(By.XPATH, '//*[@id="identifierId"]').send_keys(
+            str(obj["user"])
+        )
+        # Click on Next-button
+        driver.find_element(
+            By.XPATH, '//*[@id="identifierNext"]/div/button/span'
+        ).click()
+        sleep(3)
+        # Fill in the password
+        driver.find_element(
+            By.XPATH, '//*[@id="password"]/div[1]/div/div[1]/input'
+        ).send_keys(str(obj["passwd"]))
+        # Click on Next button
+        driver.find_element(By.XPATH, '//*[@id="passwordNext"]/div/button/span').click()
+        sleep(10)
+        # Login process was successful
+        print("You are logged into Google email account!")
+    except Exception as e:
+        print(str(e))
