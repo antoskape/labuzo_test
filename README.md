@@ -4,7 +4,7 @@ Python code to login automatically into the Google mailbox.
 
 # Author
 
-Peter Antoska
+Peter Antoska  
 peter.antoska@gmail.com
 
 ## Installation
@@ -14,10 +14,10 @@ Update credentials.json with right user email and password.
 
 # Requirements
 
-Google Chrome browser
-Python 3.8
-Selenium library
-undetected_chromedriver package
+Google Chrome browser  
+Python 3.8  
+Selenium library  
+undetected_chromedriver package  
 
 ## Usage
 
