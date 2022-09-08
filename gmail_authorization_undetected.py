@@ -47,8 +47,9 @@ if __name__ == "__main__":
         ).send_keys(str(obj["passwd"]))
         # Click on Next button
         driver.find_element(By.XPATH, '//*[@id="passwordNext"]/div/button/span').click()
+    except Exception as e:
+        print(str(e))
+    else:
         sleep(10)
         # Login process was successful
         print("You are logged into Google email account!")
-    except Exception as e:
-        print(str(e))
